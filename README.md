@@ -1,66 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistema Gestor Financeiro
+## Descrição do Projeto
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este projeto é um sistema gestor financeiro desenvolvido com o objetivo de ajudar os usuários a gerenciar suas finanças pessoais de forma eficiente. Através deste sistema, os usuários podem criar suas contas, registrar seus gastos e ganhos, visualizar o total de ganhos e a quantia restante, além de acessar o histórico completo de suas transações.
+## Tecnologias Utilizadas
 
-## About Laravel
+- Vite: Ferramenta de build e desenvolvimento rápida para projetos front-end.
+- HTML: Utilizado para estruturar as páginas do sistema.
+- CSS: Utilizado para estilizar e melhorar a aparência visual do sistema.
+- JavaScript: Utilizado para adicionar interatividade e melhorar a experiência do usuário.
+- Tailwind CSS: Framework de CSS para estilização rápida e eficiente.
+- PHP: Utilizado para a lógica de backend e manipulação de dados.
+- Laravel 11: Framework PHP utilizado para construir o sistema de forma eficiente e organizada.
+- MySQL: Banco de dados utilizado para armazenar as informações dos usuários e transações.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Funcionalidades
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Criação de Conta: Os usuários podem criar suas contas pessoais para acessar todos os serviços oferecidos pelo sistema.
+- Registro de Gastos e Ganhos: Permite que os usuários registrem seus gastos e ganhos de forma prática.
+- Resumo Financeiro: Visualize o total de ganhos e a quantia restante.
+- Histórico de Transações: Acesse o histórico completo de todas as transações realizadas.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Instalação
 
-## Learning Laravel
+Clone o repositório:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+    git clone https://github.com/seu-usuario/sistema-gestor-financeiro.git
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Navegue até o diretório do projeto:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+    cd sistema-gestor-financeiro
 
-## Laravel Sponsors
+Instale as dependências do Composer:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+    composer install
 
-### Premium Partners
+Instale as dependências do Node.js:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+    npm install
 
-## Contributing
+Crie um arquivo .env a partir do .env.example:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    cp .env.example .env
 
-## Code of Conduct
+Configure o arquivo .env com as informações do seu banco de dados MySQL.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Gere a chave da aplicação:
 
-## Security Vulnerabilities
+    php artisan key:generate
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Execute as migrações para criar as tabelas no banco de dados:
 
-## License
+    php artisan migrate
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Compile os assets com o Vite:
+
+    npm run build
+
+Inicie o servidor de desenvolvimento:
+
+    php artisan serve
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com este projeto. Para isso, siga as etapas abaixo:
+
+1. Faça um fork do projeto.
+2. Crie uma nova branch:
+
+        git checkout -b feature-nova-funcionalidade
+
+3. Faça suas alterações e commit:
+
+        git commit -m 'Adiciona nova funcionalidade'
+
+4. Envie para a branch principal:
+
+        git push origin feature-nova-funcionalidade
+
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
