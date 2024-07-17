@@ -1,0 +1,1 @@
+<img src="{{ asset('/images/logotipo-cash-controll.jfif') }}" alt="Logotipo - Cash Controll" class="h-10">
